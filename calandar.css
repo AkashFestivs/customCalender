@@ -1,0 +1,53 @@
+.outsideRing{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    /* background-color: aqua; */
+    color: aliceblue;
+    background-color: #555;
+    height: 40vw;
+    width: 40vw !important;
+    border-radius: 20000px;
+    border: 2px solid black;
+}
+
+.height {
+    height: 100vh;
+}
+
+.first-child {
+    margin: auto;
+    position: absolute;
+    height: 75%;
+    width: 75%;
+    border-radius: 2000000px;
+    color: aliceblue;
+    /* background-color: black; */
+    background-color: #555;
+    box-shadow: 0px 0px 12px 3px black
+}
+
+.second-child {
+    margin: auto;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 2000000px;
+    color: aliceblue;
+    /* background-color: greenyellow; */
+    background-color: #555;
+    box-shadow: 0px 0px 12px 3px black
+}
+
+.third-child {
+    margin: auto;
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    border-radius: 2000000px;
+    color: aliceblue;
+    /* background-color: red; */
+    background-color: #555;
+    box-shadow: 0px 0px 12px 3px black
+}
