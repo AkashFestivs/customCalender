@@ -1,72 +1,50 @@
-.outsideRing{
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(52, 47, 47);
+}
+
+.container{
+    position: relative;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.outerCircle{
     position: relative;
-    /* background-color: aqua; */
+    width: 450px;
+    height: 450px;
+    background-color: rgb(52, 47, 47);
+    border-radius: 50%;
+    box-shadow: 0px 0px 34px 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.outerCircle::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(52, 47, 47);
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.outerCircle span{
+    position: absolute;
+    inset: 20px;
     color: aliceblue;
-    background-color: #555;
-    height: 40vw;
-    width: 40vw !important;
-    border-radius: 20000px;
-    border: 2px solid black;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
 }
 
-.height {
-    height: 100vh;
-}
+.outerCircle span b{
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
 
-.first-child {
-    margin: auto;
-    position: absolute;
-    height: 75%;
-    width: 75%;
-    border-radius: 2000000px;
-    color: aliceblue;
-    /* background-color: black; */
-    background-color: #555;
-    box-shadow: 0px 0px 12px 3px black
-}
-
-.second-child {
-    margin: auto;
-    position: absolute;
-    height: 50%;
-    width: 50%;
-    border-radius: 2000000px;
-    color: aliceblue;
-    /* background-color: greenyellow; */
-    background-color: #555;
-    box-shadow: 0px 0px 12px 3px black
-}
-
-.third-child {
-    margin: auto;
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    border-radius: 2000000px;
-    color: aliceblue;
-    /* background-color: red; */
-    background-color: #555;
-    box-shadow: 0px 0px 12px 3px black
-}
-
-.sunday{
-    position: absolute;
-    transform: rotate(-85deg);
-    margin-right: 100%;
-    padding-top: 50px;
-}
-
-.monday{
-    position: absolute;
-    transform: rotate(-72deg);
-    margin-right: 92%;
-    padding-top: 50px;
-    margin-top: -30%;
-}
-
-.tuesday{
-    transform: rotate(-50deg);
 }
