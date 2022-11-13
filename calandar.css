@@ -13,19 +13,19 @@ body{
     display: flex;
 }
 
-.outerCircle{
+.DayCircle{
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 550px;
     background-color: rgb(52, 47, 47);
     border-radius: 50%;
-    box-shadow: 0px 0px 34px 5px;
+    box-shadow: 0px 0px 34px 5px aqua;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.outerCircle::before{
+.timeCircle::before{
     content: '';
     position: absolute;
     width: 8px;
@@ -35,16 +35,39 @@ body{
     border-radius: 50%;
 }
 
-.outerCircle span{
+.DayCircle span{
     position: absolute;
     inset: 20px;
     color: aliceblue;
     text-align: center;
-    transform: rotate(calc(30deg * var(--i)));
+    transform: rotate(calc(50deg * var(--i)));  
 }
 
-.outerCircle span b{
+.DayCircle span b{
     display: inline-block;
-    transform: rotate(calc(-30deg * var(--i)));
+}
 
+.timeCircle{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: rgb(52, 47, 47);
+    border-radius: 50%;
+    box-shadow: 0px 0px 11px 1px darkturquoise;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.timeCircle span{
+    position: absolute;
+    inset: 20px;
+    color: aliceblue;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));  
+}
+
+.timeCircle span b{
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));  
 }
