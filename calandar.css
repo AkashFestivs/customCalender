@@ -23,6 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    transform: rotate(218deg);
 }
 
 .timeCircle::before{
@@ -33,6 +34,7 @@ body{
     background-color: rgb(52, 47, 47);
     border: 2px solid white;
     border-radius: 50%;
+
 }
 
 .DayCircle span{
@@ -40,7 +42,7 @@ body{
     inset: 20px;
     color: aliceblue;
     text-align: center;
-    transform: rotate(calc(50deg * var(--i)));  
+    transform: rotate(calc(34deg * var(--i)));  
 }
 
 .DayCircle span b{
@@ -53,10 +55,11 @@ body{
     height: 450px;
     background-color: rgb(52, 47, 47);
     border-radius: 50%;
-    box-shadow: 0px 0px 11px 1px darkturquoise;
+    box-shadow: 0px 0px 11px 1px currentColor;
     justify-content: center;
     align-items: center;
     display: flex;
+    transform: rotate(142deg);
 }
 
 .timeCircle span{
