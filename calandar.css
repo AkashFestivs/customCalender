@@ -74,3 +74,8 @@ body{
     display: inline-block;
     transform: rotate(calc(-30deg * var(--i)));  
 }
+
+.neonText{
+    color: red;
+    text-shadow: 0px 0px 20px red;
+}
