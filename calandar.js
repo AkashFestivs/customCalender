@@ -1,3 +1,6 @@
+
+setInterval(() =>{
+    
 let date = new Date();
 console.log('Date',date);
 let day = date.getDay();
@@ -23,3 +26,19 @@ if(day == '4'){
 if(day == '5'){
     document.querySelector('.fri').style.color = 'palegreen';
 }
+
+let hr = document.getElementById('hr');
+let mn = document.getElementById('mn');
+let sc = document.getElementById('sc');
+
+    let hh = date.getHours() * 30;
+    let mm = date.getMinutes() * 6;
+    let ss = date.getSeconds() * 6;
+    
+    hr.style.transform = `rotateZ(${hh + (mm /12)}deg)`;
+    mn.style.transform = `rotateZ(${mm}deg)`;
+    sc.style.transform = `rotateZ(${ss}deg)`;
+},1000);
+
+
+
