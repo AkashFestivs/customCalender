@@ -2,24 +2,24 @@ let date = new Date();
 console.log('Date',date);
 let day = date.getDay();
 
-if(day == '1'){
+if(day == '6'){
     document.querySelector('.sat').style.color = 'palegreen';
 }
-if(day == '2'){
+if(day == '7'){
     document.querySelector('.sun').style.color = 'palegreen';
 }
-if(day == '3'){
+if(day == '1'){
     document.querySelector('.mon').style.color = 'palegreen';
 }
-if(day == '4'){
+if(day == '2'){
     document.querySelector('.tues').style.color = 'palegreen';
 }
-if(day == '5'){
+if(day == '3'){
     document.querySelector('.wed').style.color = 'palegreen';
 }
-if(day == '6'){
+if(day == '4'){
     document.querySelector('.thurs').style.color = 'palegreen';
 }
-if(day == '7'){
+if(day == '5'){
     document.querySelector('.fri').style.color = 'palegreen';
 }
